@@ -45,6 +45,7 @@ class Board extends React.Component {
   renderSquare(i) {
     return (
       <Square
+        key={i}
         value={this.props.squares[i]}
         current_changed={
           this.props.focus.includes(i) ? { border: "2px solid #000" } : {}
